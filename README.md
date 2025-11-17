@@ -1,4 +1,5 @@
 # VoidVerse
+<<<<<<< HEAD
 
 A dynamic online comic store simulation built with HTML, CSS, and JavaScript. This project showcases advanced front-end design and client-side interactivity without any backend dependencies.
 
@@ -125,3 +126,6 @@ This project is for educational and portfolio purposes. Comic data and images ar
 - Swiper.js for carousel functionality
 - Placeholder images from various free sources
 - Comic data inspired by real publications (fictionalized for demo)
+=======
+Your Ultimate destination for Comic Books
+>>>>>>> 09d056f164a443805e025ddaea3339cbdd3bfb8a

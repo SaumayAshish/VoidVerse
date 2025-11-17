@@ -1,0 +1,643 @@
+/* ComicVerse Hub - Global Styles */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url('../images/hero3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Impact', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #1a1a1a;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff0000;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-links a:hover {
+    color: #ff0000;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.hero-carousel {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.hero-slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    background-color: rgba(0,0,0,0.7);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Sections */
+.section {
+    padding: 4rem 0;
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #ff0000;
+}
+
+/* Comic Grid */
+.comic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.comic-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.comic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+.comic-cover {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+}
+
+.comic-info {
+    padding: 1rem;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comic-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    line-height: 1.3;
+}
+
+.comic-price {
+    font-size: 1.1rem;
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+/* Filters and Sorting */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.filter-group label {
+    color: #fff;
+}
+
+.filter-group select {
+    padding: 0.5rem;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+/* Comic Detail */
+.comic-detail {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.comic-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.comic-image img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.comic-image img:hover {
+    transform: scale(1.05);
+}
+
+.comic-info {
+    flex: 2;
+    min-width: 300px;
+}
+
+.comic-detail-info h1 {
+    margin-bottom: 1rem;
+}
+
+.comic-detail-info p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.add-to-cart-btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Cart */
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-item-info {
+    flex: 1;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cart-item-quantity button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.cart-total {
+    text-align: right;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+.checkout-btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.checkout-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Publisher Spotlights Section */
+.publisher-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.publisher-card {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.publisher-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+.publisher-card h3 {
+    color: #ff0000;
+    margin-bottom: 1rem;
+}
+
+.publisher-card p {
+    margin-bottom: 1.5rem;
+    color: #ccc;
+}
+
+/* Category Grid */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.category-card {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    position: relative;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+.category-card h3 {
+    color: #ff0000;
+    margin-bottom: 1rem;
+}
+
+.category-card p {
+    margin-bottom: 1.5rem;
+    color: #ccc;
+    flex-grow: 1;
+}
+
+.category-card .add-to-cart-btn {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+/* Login Styles */
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 0.75rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #ff0000;
+}
+
+.signup-link {
+    text-align: center;
+    color: #999;
+    margin-top: 1rem;
+}
+
+.signup-link a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* About Us and Contact Styles */
+.about-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.founder-grid, .contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.founder-card, .contact-card {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.founder-card:hover, .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+.founder-card h4, .contact-card h3 {
+    color: #ff0000;
+    margin-bottom: 0.5rem;
+}
+
+.founder-card p, .contact-card p {
+    color: #ccc;
+    margin-bottom: 0.5rem;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #ff0000;
+}
+
+/* Social Media Styles */
+.social-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social-element {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.social-element:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+.social-element i {
+    font-size: 3rem;
+    color: #ff0000;
+    margin-bottom: 1rem;
+}
+
+.social-element h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.social-element p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Origin Story Content */
+.origin-story-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.origin-story-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-family: 'Georgia', serif;
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    padding: 2rem 0;
+    text-align: center;
+    color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .comic-detail {
+        flex-direction: column;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-group {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .comic-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+

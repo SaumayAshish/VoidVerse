@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Details - VoidVerse</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="window.location.href='index.html'">VoidVerse</div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="browse.html"><i class="fas fa-search"></i> Browse</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Comic Detail Section -->
+    <section class="section" style="background-color: #1a1a1a;">
+        <div class="container">
+            <div class="comic-detail" id="comic-detail">
+
+                <!-- 💥 Comic Image -->
+                <div class="comic-image">
+                    <img id="comic-image" src="" alt="Comic Cover">
+                </div>
+
+                <!-- 💥 Comic Info -->
+                <div class="comic-info">
+
+                    <h2 id="comic-title">Comic Title</h2>
+
+                    <p><strong>Creators:</strong> <span id="comic-creators">Creator Names</span></p>
+                    <p><strong>Publisher:</strong> <span id="comic-publisher">Publisher Name</span></p>
+                    <p><strong>Genre:</strong> <span id="comic-genre">Genre</span></p>
+                    <p><strong>Year:</strong> <span id="comic-year">Year</span></p>
+                    <p><strong>Main Characters:</strong> <span id="comic-main-characters">Main Characters</span></p>
+                    <p><strong>Price:</strong> <span id="comic-price">$0.00</span></p>
+
+                    <p class="comic-description">
+                        <strong>Synopsis:</strong>
+                        <span id="comic-synopsis">
+                            Synopsis of the comic will appear here.
+                        </span>
+                    </p>
+
+                    <button class="btn add-to-cart-btn" id="add-to-cart-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 VoidVerse. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="data/comics.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/comic-detail.js"></script>
+</body>
+</html>

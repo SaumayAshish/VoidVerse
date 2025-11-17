@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoidVerse - Your Ultimate Comic Book Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="window.location.href='index.html'">VoidVerse</div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="browse.html"><i class="fas fa-search"></i> Browse</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-carousel swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hero-slide" style="background-image: url('images/hero1.jpg')">
+                    <div class="hero-content">
+                        <h1>Welcome to VoidVerse</h1>
+                        <p>Discover the latest comics from your favorite publishers</p>
+                        <a href="browse.html" class="add-to-cart-btn">Shop Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide hero-slide" style="background-image: url('images/JOKER.jpg')">
+                    <div class="hero-content">
+                        <h1>New Releases</h1>
+                        <p>Check out the hottest comics hitting the shelves</p>
+                        <a href="browse.html" class="add-to-cart-btn">Explore</a>
+                    </div>
+                </div>
+                <div class="swiper-slide hero-slide" style="background-image: url('images/download.jpg')">
+                    <div class="hero-content">
+                        <h1>Exclusive Deals</h1>
+                        <p>Save big on your favorite series</p>
+                        <a href="browse.html" class="add-to-cart-btn">View Deals</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- Origin Story Section -->
+    <section class="section" style="background-color: #1a1a1a; color: #fff;">
+        <div class="container">
+            <h2 class="section-title" style="color: #ff0000;">Origin Story</h2>
+            <div class="origin-story-content">
+                <p><em><strong>VoidVerse was born from a love for storytelling and a mission to reshape how fans discover, explore, and experience comic books online. We believe that comics are more than just pages—they are universes waiting to be explored, emotions waiting to be felt, and creativity waiting to be shared. At VoidVerse, we combine innovative design, immersive visuals, and cutting-edge technology to create a digital space where every reader feels connected to the worlds they love. Our goal is to become a leading force in the comic-book web industry by offering a platform that celebrates imagination, champions creators, and brings fans closer to their favorite heroes, villains, and stories. As we grow, we remain committed to pushing boundaries, building community, and transforming VoidVerse into the ultimate destination for comic enthusiasts everywhere.</strong></em></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comic of the Week Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Comic of the Week</h2>
+            <div class="comic-grid" id="comic-of-week">
+                <!-- Featured comic will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- New Releases Section -->
+    <section class="section" style="background-color: #f5f5f5; color: #333;">
+        <div class="container">
+            <h2 class="section-title" style="color: #ff0000;">New Releases</h2>
+            <div class="comic-grid" id="new-releases">
+                <!-- Comics will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Series Section -->
+    <section class="section" style="background-color: #111;">
+        <div class="container">
+            <h2 class="section-title">Popular Series</h2>
+            <div class="comic-grid" id="popular-series">
+                <!-- Comics will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Publisher Spotlights Section -->
+    <section class="section" style="background-color: #f5f5f5; color: #333;">
+        <div class="container">
+            <h2 class="section-title" style="color: #ff0000;">Publisher Spotlights</h2>
+            <div class="publisher-grid">
+                <div class="publisher-card">
+                    <h3>Marvel Comics</h3>
+                    <p>Home of Spider-Man, X-Men, and more!</p>
+                    <a href="browse.html?publisher=Marvel" class="add-to-cart-btn">Shop Marvel</a>
+                </div>
+                <div class="publisher-card">
+                    <h3>DC Comics</h3>
+                    <p>Batman, Superman, and the Justice League await!</p>
+                    <a href="browse.html?publisher=DC" class="add-to-cart-btn">Shop DC</a>
+                </div>
+                <div class="publisher-card">
+                    <h3>Image Comics</h3>
+                    <p>Independent comics for mature readers.</p>
+                    <a href="browse.html?publisher=Image" class="add-to-cart-btn">Shop Image</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="section" style="background-color: #111;">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <p>Welcome to VoidVerse, your ultimate destination for comic book enthusiasts! We are passionate about bringing you the best collection of comics from major publishers like Marvel, DC, and Image.</p>
+                <div class="founder-info">
+                    <h3>Meet Our Founders</h3>
+                    <div class="founder-grid">
+                        <div class="founder-card">
+                            <h4>CEO: Saumay Ashish</h4>
+                            <p>Visionary leader driving innovation in the comic book industry.</p>
+                        </div>
+                        <div class="founder-card">
+                            <h4>CTO: Vaibhav Chandola</h4>
+                            <p>Tech genius behind our cutting-edge platform and user experience.</p>
+                        </div>
+                        <div class="founder-card">
+                            <h4>CFO: Krishan Kant Kashyap</h4>
+                            <p>Financial strategist ensuring sustainable growth and customer value.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" style="background-color: #f5f5f5; color: #333;">
+        <div class="container">
+            <h2 class="section-title" style="color: #ff0000;">Contact Information</h2>
+            <div class="contact-info">
+            <div class="contact-card">
+                <img src="images/profilepic.png" alt="CEO Saumay Ashish" class="profile-pic">
+                <h3>CEO: Saumay Ashish</h3>
+                <p>Email: Saumay_nexus@voidverse.com</p>
+                <p>Phone: +91 7905076096</p>
+            </div>
+            <div class="contact-card">
+                <img src="images/profilepic2.jpeg" alt="CTO Vaibhav Chandola" class="profile-pic">
+                <h3>CTO: Vaibhav Chandola</h3>
+                <p>Email: Vaibhav_nexus@voidverse.com</p>
+                <p>Phone: +91 9917660306</p>
+            </div>
+            <div class="contact-card">
+                <img src="images/profilepic3.jpeg" alt="CFO Krishan Kant Kashyap" class="profile-pic">
+                <h3>CFO: Krishan Kant Kashyap</h3>
+                <p>Email: Krishan_nexus@voidverse.com</p>
+                <p>Phone: +91 9720972433</p>
+            </div>
+            <div class="contact-card">
+                <h3>Company Contact</h3>
+                <p>Email: nexus@voidverse.com</p>
+                <p>For general inquiries and support</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="section" style="background-color: #111;">
+        <div class="container">
+            <h2 class="section-title">Follow VoidVerse</h2>
+            <div class="social-media">
+                <div class="social-element">
+                    <i class="fab fa-instagram"></i>
+                    <h3>@voidverse_comics</h3>
+                    <p>Daily comic updates, behind-the-scenes content, and exclusive previews</p>
+                </div>
+                <div class="social-element">
+                    <i class="fab fa-twitter"></i>
+                    <h3>@VoidVerseHQ</h3>
+                    <p>Real-time updates on new releases and comic industry news</p>
+                </div>
+                <div class="social-element">
+                    <i class="fab fa-facebook"></i>
+                    <h3>VoidVerse Comics</h3>
+                    <p>Join our community of comic enthusiasts and share your favorite reads</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 VoidVerse. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="data/comics.js"></script>
+    <script src="js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

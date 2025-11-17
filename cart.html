@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - VoidVerse</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="window.location.href='index.html'">VoidVerse</div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="browse.html"><i class="fas fa-search"></i> Browse</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cart Section -->
+    <section class="section" style="background-image: url('images/marvel.jpg'), url('images/dc.jpg'); background-size: contain; background-position: left center, right center; background-repeat: no-repeat;">
+        <div class="container">
+            <h1 class="section-title">Your Shopping Cart</h1>
+
+            <div id="cart-items">
+                <!-- Cart items will be loaded here -->
+            </div>
+
+            <div class="cart-total" id="cart-total">
+                <!-- Total will be displayed here -->
+            </div>
+
+            <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 VoidVerse. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="data/comics.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
